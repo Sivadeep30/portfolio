@@ -1,47 +1,76 @@
 import React, { useState } from 'react';
-import { Github, ExternalLink, X } from 'lucide-react';
+import { Github, ExternalLink, X, ChevronRight } from 'lucide-react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation, Pagination, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 
 const projects = [
   {
     id: 1,
-    name: "E-Commerce Platform",
+    name: "Online Automobile Store",
     category: "fullstack",
-    description: "A full-stack e-commerce platform with user authentication, product management, and payment integration.",
+    description: "An Online Automobile Store in which the users can view and book orders to buy a car. Features include real-time inventory updates, secure payment processing, and a responsive admin dashboard.",
+    longDescription: "This full-stack e-commerce platform revolutionizes the car buying experience. Built with a modern tech stack, it offers seamless integration between the frontend and backend systems. Key features include real-time inventory management, secure payment processing through Stripe, and a comprehensive admin dashboard for inventory and order management.",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+    cardImage: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
-      "https://images.unsplash.com/photo-1557821556-73f11ba37e1e?w=800&q=80"
+      "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80",
+      "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80",
+      "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80"
     ],
-    github: "https://github.com/yourusername/ecommerce"
+    github: "https://github.com/yourusername/ecommerce",
+    features: [
+      "Real-time inventory tracking",
+      "Secure payment processing",
+      "Admin dashboard",
+      "Order management",
+      "User authentication"
+    ]
   },
   {
     id: 2,
     name: "AI Image Recognition",
     category: "aiml",
     description: "An AI-powered image recognition system using deep learning models.",
+    longDescription: "This cutting-edge AI system leverages deep learning to provide accurate image recognition capabilities. The system can identify objects, faces, and text in images with high accuracy.",
     techStack: ["Python", "TensorFlow", "OpenCV", "Flask"],
+    cardImage: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&q=80",
-      "https://images.unsplash.com/photo-1555949968-bbe06ac22e19?w=800&q=80"
+      "https://images.unsplash.com/photo-1633419461186-1f0e2b5785b4?w=800&q=80",
+      "https://images.unsplash.com/photo-1633419461186-1f0e2b5785b4?w=800&q=80"
     ],
-    github: "https://github.com/yourusername/ai-image-recognition"
+    github: "https://github.com/yourusername/ai-image-recognition",
+    features: [
+      "Real-time object detection",
+      "Face recognition",
+      "Text extraction",
+      "API integration",
+      "Batch processing"
+    ]
   },
   {
     id: 3,
     name: "Smart Home System",
     category: "iot",
     description: "IoT-based smart home automation system with sensor integration and mobile control.",
+    longDescription: "A comprehensive smart home solution that integrates various IoT devices and sensors to provide automated control and monitoring of home systems. The platform includes mobile apps for remote control and real-time monitoring.",
     techStack: ["Arduino", "Raspberry Pi", "MQTT", "React Native"],
+    cardImage: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
-      "https://images.unsplash.com/photo-1558002038-1055907df828?w=800&q=80"
+      "https://images.unsplash.com/photo-1544975755-a37627c3df82?w=800&q=80",
+      "https://images.unsplash.com/photo-1544975755-a37627c3df82?w=800&q=80"
     ],
-    github: "https://github.com/yourusername/smart-home"
+    github: "https://github.com/yourusername/smart-home",
+    features: [
+      "Temperature control",
+      "Lighting automation",
+      "Security monitoring",
+      "Energy usage tracking",
+      "Mobile app control"
+    ]
   }
 ];
 
@@ -50,6 +79,12 @@ function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const filteredProjects = projects.filter(project => project.category === selectedCategory);
+
+  const handleModalClick = (e) => {
+    if (e.target.classList.contains('modal-overlay')) {
+      setSelectedProject(null);
+    }
+  };
 
   return (
     <div className="projects-container">
@@ -70,89 +105,120 @@ function Projects() {
       <div className="projects-grid">
         {filteredProjects.map((project) => (
           <div key={project.id} className="project-card">
-            <img
-              src={project.images[0]}
-              alt={project.name}
-              className="project-image"
-            />
+            <div className="project-image-container">
+              <img
+                src={project.cardImage}
+                alt={project.name}
+                className="project-image"
+              />
+              <div className="project-overlay">
+                <button
+                  onClick={() => setSelectedProject(project)}
+                  className="view-details-btn"
+                >
+                  View Details
+                  <ChevronRight size={16} />
+                </button>
+              </div>
+            </div>
             <div className="project-content">
               <h3>{project.name}</h3>
               <p>{project.description}</p>
-              <button
-                onClick={() => setSelectedProject(project)}
-                className="view-details-btn"
-              >
-                View Details
-              </button>
+              <div className="project-tech-preview">
+                {project.techStack.slice(0, 3).map((tech, index) => (
+                  <span key={index} className="tech-tag-preview">
+                    {tech}
+                  </span>
+                ))}
+                {project.techStack.length > 3 && (
+                  <span className="tech-tag-preview">+{project.techStack.length - 3}</span>
+                )}
+              </div>
             </div>
           </div>
         ))}
       </div>
 
       {selectedProject && (
-        <div className="modal-overlay">
+        <div className="modal-overlay" onClick={handleModalClick}>
           <div className="modal-content">
-            <div className="modal-header">
-              <h3>{selectedProject.name}</h3>
-              <button
-                onClick={() => setSelectedProject(null)}
-                className="close-btn"
-              >
-                <X size={24} />
-              </button>
-            </div>
-
-            <Swiper
-              modules={[Navigation, Pagination]}
-              navigation
-              pagination={{ clickable: true }}
-              className="project-swiper"
+            <button
+              onClick={() => setSelectedProject(null)}
+              className="close-btn"
             >
-              {selectedProject.images.map((image, index) => (
-                <SwiperSlide key={index}>
-                  <img
-                    src={image}
-                    alt={`${selectedProject.name} screenshot ${index + 1}`}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+              <X size={24} />
+            </button>
 
-            <div className="modal-details">
-              <p>{selectedProject.description}</p>
-              
-              <div className="tech-stack">
-                <h4>Tech Stack:</h4>
-                <div className="tech-tags">
-                  {selectedProject.techStack.map((tech, index) => (
-                    <span key={index} className="tech-tag">
-                      {tech}
-                    </span>
+            <div className="modal-grid">
+              <div className="modal-gallery">
+                <Swiper
+                  modules={[Navigation, Pagination, EffectFade]}
+                  navigation
+                  pagination={{ clickable: true }}
+                  effect="fade"
+                  className="project-swiper"
+                >
+                  {selectedProject.images.map((image, index) => (
+                    <SwiperSlide key={index}>
+                      <img
+                        src={image}
+                        alt={`${selectedProject.name} screenshot ${index + 1}`}
+                      />
+                    </SwiperSlide>
                   ))}
-                </div>
+                </Swiper>
               </div>
 
-              <div className="project-links">
-                <a
-                  href={selectedProject.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="github-btn"
-                >
-                  <Github size={20} />
-                  GitHub
-                </a>
-                {selectedProject.liveDemo && (
-                  <a
-                    href={selectedProject.liveDemo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="demo-btn"
-                  >
-                    <ExternalLink size={20} />
-                    Live Demo
-                  </a>
-                )}
+              <div className="modal-details">
+                <div className="modal-header">
+                  <h3>{selectedProject.name}</h3>
+                  <div className="project-links">
+                    <a
+                      href={selectedProject.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="github-btn"
+                    >
+                      <Github size={20} />
+                      GitHub
+                    </a>
+                    {selectedProject.liveDemo && (
+                      <a
+                        href={selectedProject.liveDemo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="demo-btn"
+                      >
+                        <ExternalLink size={20} />
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
+                </div>
+
+                <div className="project-description">
+                  <p>{selectedProject.longDescription}</p>
+                </div>
+
+                <div className="project-features">
+                  <h4>Key Features</h4>
+                  <ul>
+                    {selectedProject.features.map((feature, index) => (
+                      <li key={index}>{feature}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="tech-stack">
+                  <h4>Tech Stack</h4>
+                  <div className="tech-tags">
+                    {selectedProject.techStack.map((tech, index) => (
+                      <span key={index} className="tech-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
