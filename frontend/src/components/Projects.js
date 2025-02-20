@@ -149,8 +149,8 @@ function Projects() {
               <X size={24} />
             </button>
 
-            <div className="modal-grid">
-              <div className="modal-gallery">
+            <div className="modal-grid" style={{display:"flex",flexDirection:"column", gap:"2rem"}}>
+              <div className="modal-gallery" style={{width:"100%"}}>
                 <Swiper
                   modules={[Navigation, Pagination, EffectFade]}
                   navigation
