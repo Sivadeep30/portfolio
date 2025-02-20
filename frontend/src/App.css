@@ -498,6 +498,14 @@ h2 {
   backdrop-filter: blur(8px);
 }
 
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .modal-content {
   background-color: #121212;
   border-radius: 20px;
@@ -513,14 +521,37 @@ h2 {
 
 .modal-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding: 2rem;
 }
 
 .modal-gallery {
-  position: sticky;
-  top: 2rem;
+  position: relative; /* Changed from sticky to relative */
+  height: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .modal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-gallery {
+    position: relative;
+  }
+
+  .project-swiper img {
+    height: 300px;
+  }
+
+  .modal-header {
+    margin: -1rem -1rem 1.5rem -1rem;
+    padding: 1.5rem;
+  }
 }
 
 .close-btn {
