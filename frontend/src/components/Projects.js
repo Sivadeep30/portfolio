@@ -6,29 +6,66 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
+import a from '../assests/img/auto.png';
+import aa from '../assests/img/auto1.png';
+import ab from '../assests/img/auto3.png';
+import abc from '../assests/img/auto4.png';
+import abcd from '../assests/img/auto5.png';
+import abcde from '../assests/img/auto6.png';
+import abcdef from '../assests/img/auto7.png';
+import abcdeff from '../assests/img/auto8.png';
+import abcdefff from '../assests/img/auto9.png';
+
+
+
 
 const projects = [
   {
     id: 1,
     name: "Online Automobile Store",
     category: "fullstack",
-    description: "An Online Automobile Store in which the users can view and book orders to buy a car. Features include real-time inventory updates, secure payment processing, and a responsive admin dashboard.",
-    longDescription: "This full-stack e-commerce platform revolutionizes the car buying experience. Built with a modern tech stack, it offers seamless integration between the frontend and backend systems. Key features include real-time inventory management, secure payment processing through Stripe, and a comprehensive admin dashboard for inventory and order management.",
+    description: "An Online Automobile Store in which the users can view and book orders to buy a car. Features include real-time inventory updates, users selling their own cars, and a responsive admin dashboard.",
+    longDescription: "This full-stack e-commerce platform revolutionizes the car buying experience. Built with a modern tech stack, it offers seamless integration between the frontend and backend systems. Key features include real-time inventory management, users selling their own cars, and a comprehensive admin dashboard for inventory and order management.",
     techStack: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
     cardImage: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80",
-      "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80",
-      "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80"
+              a,aa,ab,abc,abcd,abcde,abcdef,abcdeff,abcdefff
     ],
-    github: "https://github.com/yourusername/ecommerce",
+    github: "https://github.com/Sivadeep30/Auto-store",
     features: [
       "Real-time inventory tracking",
-      "Secure payment processing",
+      "Users Selling their own cars",
       "Admin dashboard",
       "Order management",
       "User authentication"
     ]
+  },
+  {
+    id: 2,
+    name: "Cricket App",
+    category: "fullstack",
+    
+      "description": "A Cricket Stats App that allows users to browse Indian cricket players, view their profiles, and check their match statistics in various formats.",
+      "longDescription": "This full-stack cricket statistics platform provides users with real-time player stats, including Test, ODI, T20, and IPL records. Built using a modern tech stack, it offers an interactive UI for seamless navigation, along with detailed player profiles and performance insights.",
+      "techStack": ["React", "Node.js", "Express", "MongoDB", "Cricket API"],
+      "cardImage": "https://images.augustman.com/wp-content/uploads/sites/4/2023/04/20180002/untitled-design-2023-04-16t071319-214.jpeg?tr=w-1920",
+      "images": [
+          "cricket_homepage.jpg",
+          "player_list.jpg",
+          "player_stats.jpg",
+          "match_history.jpg",
+          "leaderboard.jpg"
+      ],
+      "github": "https://github.com/yourusername/cricket-stats-app",
+      "features": [
+          "Fetch Indian cricket players list",
+          "Display player profiles with images",
+          "Show detailed batting and bowling stats",
+          "Live updates on match performances",
+          "Search and filter players by format (Test, ODI, T20, IPL)"
+      ]
+  
+  
   },
   {
     id: 2,
