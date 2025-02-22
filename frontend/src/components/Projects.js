@@ -15,8 +15,11 @@ import abcde from '../assests/img/auto6.png';
 import abcdef from '../assests/img/auto7.png';
 import abcdeff from '../assests/img/auto8.png';
 import abcdefff from '../assests/img/auto9.png';
-
-
+import b from '../assests/img/cricket.png';
+import bb from '../assests/img/cricket1.png';
+import bc from '../assests/img/cricket2.png';
+import bcd from '../assests/img/cricket3.png';
+import bcde from '../assests/img/cricket4.png';
 
 
 const projects = [
@@ -26,7 +29,7 @@ const projects = [
     category: "fullstack",
     description: "An Online Automobile Store in which the users can view and book orders to buy a car. Features include real-time inventory updates, users selling their own cars, and a responsive admin dashboard.",
     longDescription: "This full-stack e-commerce platform revolutionizes the car buying experience. Built with a modern tech stack, it offers seamless integration between the frontend and backend systems. Key features include real-time inventory management, users selling their own cars, and a comprehensive admin dashboard for inventory and order management.",
-    techStack: ["React", "Node.js", "MongoDB", "Express", "Stripe"],
+    techStack: ["HTML","CSS","JavaScript","React", "Python", "MySQL"],
     cardImage: "https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800&q=80",
     images: [
               a,aa,ab,abc,abcd,abcde,abcdef,abcdeff,abcdefff
@@ -50,13 +53,9 @@ const projects = [
       "techStack": ["React", "Node.js", "Express", "MongoDB", "Cricket API"],
       "cardImage": "https://images.augustman.com/wp-content/uploads/sites/4/2023/04/20180002/untitled-design-2023-04-16t071319-214.jpeg?tr=w-1920",
       "images": [
-          "cricket_homepage.jpg",
-          "player_list.jpg",
-          "player_stats.jpg",
-          "match_history.jpg",
-          "leaderboard.jpg"
+          b,bb,bc,bcd,bcde
       ],
-      "github": "https://github.com/yourusername/cricket-stats-app",
+      "github": "https://github.com/Sivadeep30/cricket",
       "features": [
           "Fetch Indian cricket players list",
           "Display player profiles with images",
@@ -69,9 +68,9 @@ const projects = [
   },
   {
     id: 2,
-    name: "AI Image Recognition",
+    name: "GROOT-AI Driven Plant Disease Prediction",
     category: "aiml",
-    description: "An AI-powered image recognition system using deep learning models.",
+    description: "For Predicting the Diseases of crops and giving Solution via AI ChatBot",
     longDescription: "This cutting-edge AI system leverages deep learning to provide accurate image recognition capabilities. The system can identify objects, faces, and text in images with high accuracy.",
     techStack: ["Python", "TensorFlow", "OpenCV", "Flask"],
     cardImage: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
