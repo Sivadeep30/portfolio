@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios"; // Import axios
 import { Container, Row, Col } from "react-bootstrap";
-import contactImg from "../assests/img/contact-img.svg";
+import contactImg from "../assests/img/16.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 

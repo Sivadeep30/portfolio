@@ -73,6 +73,8 @@ const skillCategories = {
 // Parent Component - Displays categorized skills
 const Skills = () => {
   return (
+    <section id="skills">
+
     <div style={{ padding: '50px 20px', textAlign: 'center', backgroundColor: 'black' }}>
       <h1 style={{ fontSize: '2rem', fontWeight: 'bold', color: '#9333ea', marginBottom: '30px' }}>
         Professional Skillset
@@ -102,6 +104,7 @@ const Skills = () => {
         ))}
       </div>
     </div>
+    </section>
   );
 };
 

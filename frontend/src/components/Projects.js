@@ -123,6 +123,7 @@ function Projects() {
   };
 
   return (
+    <section id="projects">
     <div className="projects-container">
       <h2>My Projects</h2>
       
@@ -261,6 +262,7 @@ function Projects() {
         </div>
       )}
     </div>
+    </section>
   );
 }
 
