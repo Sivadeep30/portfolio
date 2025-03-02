@@ -49,7 +49,9 @@ const Banner =() =>{
                         <span className="tagline">Welcome to my portfolio</span>
                         <h1>{`Hi I'm Sivadeep`}<span className="wrap">{text}</span></h1>
                         <p></p>
-            <button onClick={()=> console.log('connenct')}>Let's connect<ArrowRightCircle size={25}/></button>
+                        <button onClick={() => window.open(process.env.PUBLIC_URL + "/22CSR198_Sivadeep N.pdf", "_blank")}>
+  Resume <ArrowRightCircle size={25} />
+</button>
 
                     </Col>
                     <Col xs={12} md={6} xl={5}>

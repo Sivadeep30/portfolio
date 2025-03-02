@@ -67,6 +67,8 @@ const skillCategories = {
     { name: 'GitHub', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg' },
     { name: 'Figma', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg' },
     { name: 'Vercel', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vercel/vercel-original.svg' },
+    { name: 'Salesforce', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/salesforce/salesforce-original.svg' },
+
   ],
 };
 
