@@ -20,6 +20,15 @@ import bb from '../assests/img/cricket1.png';
 import bc from '../assests/img/cricket2.png';
 import bcd from '../assests/img/cricket3.png';
 import bcde from '../assests/img/cricket4.png';
+import i1 from '../assests/img/imgg1.png';
+import i2 from '../assests/img/img2.jpeg';
+import i3 from '../assests/img/img3.jpeg';
+import i4 from '../assests/img/img4.jpeg';
+import i5 from '../assests/img/img5.jpeg';
+import i6 from '../assests/img/img6.jpeg';
+import i7 from '../assests/img/img7.jpeg';
+import i8 from '../assests/img/img8.jpeg';
+
 
 
 const projects = [
@@ -75,8 +84,7 @@ const projects = [
     techStack: ["Python", "TensorFlow", "OpenCV", "Flask"],
     cardImage: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1633419461186-1f0e2b5785b4?w=800&q=80",
-      "https://images.unsplash.com/photo-1633419461186-1f0e2b5785b4?w=800&q=80"
+      i1,i2,i3,i4,i5,i6,i7,i8
     ],
     github: "https://github.com/yourusername/ai-image-recognition",
     features: [

@@ -14,6 +14,7 @@ function App() {
       <Skills/>
       <Projects/>
       <Contact/>
+      
     </div>
   );
 }
