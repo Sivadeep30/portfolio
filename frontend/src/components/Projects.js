@@ -21,15 +21,13 @@ import bc from '../assests/img/cricket2.png';
 import bcd from '../assests/img/cricket3.png';
 import bcde from '../assests/img/cricket4.png';
 import i1 from '../assests/img/imgg.png';
-import i2 from '../assests/img/imgg1.png';
-import i3 from '../assests/img/img3.jpeg';
-import i4 from '../assests/img/img4.jpeg';
-import i5 from '../assests/img/img5.jpeg';
-import i6 from '../assests/img/img6.jpeg';
-import i7 from '../assests/img/img7.jpeg';
-import i8 from '../assests/img/img8.jpeg';
-
-
+import i2 from '../assests/img/im.png';
+import i3 from '../assests/img/imgg3.png';
+import i4 from '../assests/img/imgg4.png';
+import i5 from '../assests/img/imgg5.png';
+import i6 from '../assests/img/imgg6.png';
+import i7 from '../assests/img/imgg7.png';
+import grrot from '../assests/img/groot.jpg'
 
 const projects = [
   {
@@ -80,19 +78,19 @@ const projects = [
     name: "GROOT-AI Driven Plant Disease Prediction",
     category: "aiml",
     description: "For Predicting the Diseases of crops and giving Solution via AI ChatBot",
-    longDescription: "This cutting-edge AI system leverages deep learning to provide accurate image recognition capabilities. The system can identify objects, faces, and text in images with high accuracy.",
-    techStack: ["Python", "TensorFlow", "OpenCV", "Flask"],
-    cardImage: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=800&q=80",
+    longDescription:"A mobile and web app for predicting the diseases caused in plants.Online and Offline functionalities are available.In offline a user can identify the diseases caused by downloading the modal in the mobile itself.In online he access the feature of online chatbot in which the Queries related to the diseases can be asked in text using their own languages or voice assistant.Admin's can validate the posts and the alerts of nearby diseases can be shown to the user.By using environmental factors the upcoming diseases can be predicted.",
+    techStack: ["Flutter","Python", "TensorFlow", "OpenCV", "Flask"],
+    cardImage: grrot,
     images: [
-      i1,i2,i3,i4,i5,i6,i7,i8
+      i1,i2,i3,i4,i5,i6,i7
     ],
-    github: "https://github.com/yourusername/ai-image-recognition",
+    github: "https://github.com/sudharsanacernitro/Plant_Disease_prediction",
     features: [
-      "Real-time object detection",
-      "Face recognition",
-      "Text extraction",
-      "API integration",
-      "Batch processing"
+      "Mobile and Web App",
+      "Online and Offline",
+      "Multi-Lingual Chatbot",
+      "Validated Posts",
+      "Alert to farmers"
     ]
   },
   {
