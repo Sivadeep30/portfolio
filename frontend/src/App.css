@@ -1,10 +1,4 @@
-body {
-  cursor: none;
-}
 
-a, button, [role="button"] {
-  cursor: none;
-}
 
 /*Custom*/
 @font-face {
@@ -906,4 +900,5 @@ h2 {
 }
 
 
-/**********About..css*/
+/**********Footer..css*/
+
