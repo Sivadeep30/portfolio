@@ -74,7 +74,7 @@ const projects = [
   
   },
   {
-    id: 2,
+    id: 3,
     name: "GROOT-AI Driven Plant Disease Prediction",
     category: "aiml",
     description: "For Predicting the Diseases of crops and giving Solution via AI ChatBot",
@@ -94,12 +94,12 @@ const projects = [
     ]
   },
   {
-    id: 3,
-    name: "Smart Home System",
+    id: 4,
+    name: "Smart Water Tax Calculation Meter",
     category: "iot",
-    description: "IoT-based smart home automation system with sensor integration and mobile control.",
-    longDescription: "A comprehensive smart home solution that integrates various IoT devices and sensors to provide automated control and monitoring of home systems. The platform includes mobile apps for remote control and real-time monitoring.",
-    techStack: ["Arduino", "Raspberry Pi", "MQTT", "React Native"],
+    description: "IoT-based smart water tax calculation meter to measure the tax.",
+    longDescription: "An IOT based water tax calculation meter for the peoplw living in the apartments.They are currently paying the shared amount of the total apartment.By using this each houses in apartment can pay their tax according to the amount of water they used.",
+    techStack: ["Arduino", "Water Flow Sensor", "LCD"],
     cardImage: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
     images: [
       "https://images.unsplash.com/photo-1544975755-a37627c3df82?w=800&q=80",
@@ -107,11 +107,31 @@ const projects = [
     ],
     github: "https://github.com/yourusername/smart-home",
     features: [
-      "Temperature control",
-      "Lighting automation",
-      "Security monitoring",
-      "Energy usage tracking",
-      "Mobile app control"
+      "Accuarate Water Usage Measurement",
+      "Pay to Usage",
+      "Easy Monitoring",
+      "No Excess Water Management",
+      "Water Conservation"
+    ]
+  },
+  {
+    id: 5,
+    name: "Environmental Data Collection for Groot",
+    category: "iot",
+    description: "Environmental data collection using IOT sensors for plant disease prediction.",
+    longDescription: "For collecting environmenntal data using soil moisture sensor ,humidity sensor ,temperature sensor and it is used to predict the diseases that may occur due to the conditions available there.",
+    techStack: ["Raspberry PI", "Arduino", "Soil Moisture Sensor,NodeMCU"],
+    cardImage: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+    images: [
+      "https://images.unsplash.com/photo-1544975755-a37627c3df82?w=800&q=80",
+      "https://images.unsplash.com/photo-1544975755-a37627c3df82?w=800&q=80"
+    ],
+    github: "https://github.com/yourusername/smart-home",
+    features: [
+      "Environmental Data Collection",
+      "Earlier Disease Prediction",
+      "Easy Monitoring"
+     
     ]
   }
 ];

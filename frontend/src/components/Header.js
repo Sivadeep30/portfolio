@@ -55,6 +55,7 @@ const Header = () => {
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink>
+              
             </span>
           </Navbar.Collapse>
         </Container>
