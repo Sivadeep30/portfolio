@@ -504,9 +504,7 @@ h2 {
 
 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 .modal-content {
   background-color: #121212;
