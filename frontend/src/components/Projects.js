@@ -79,7 +79,7 @@ const projects = [
     category: "aiml",
     description: "For Predicting the Diseases of crops and giving Solution via AI ChatBot",
     longDescription:"A mobile and web app for predicting the diseases caused in plants.Online and Offline functionalities are available.In offline a user can identify the diseases caused by downloading the modal in the mobile itself.In online he access the feature of online chatbot in which the Queries related to the diseases can be asked in text using their own languages or voice assistant.Admin's can validate the posts and the alerts of nearby diseases can be shown to the user.By using environmental factors the upcoming diseases can be predicted.",
-    techStack: ["Flutter","Python", "TensorFlow", "OpenCV", "Flask"],
+    techStack: ["Flutter","Python", "Llama2", "ReactJS", "MongoDB"],
     cardImage: grrot,
     images: [
       i1,i2,i3,i4,i5,i6,i7
