@@ -64,7 +64,7 @@ const projects = [
       ],
       "github": "https://github.com/Sivadeep30/cricket",
       "features": [
-          "Fetch Indian cricket players list",
+          "Live Cricket Scores",
           "Display player profiles with images",
           "Show detailed batting and bowling stats",
           "Live updates on match performances",
