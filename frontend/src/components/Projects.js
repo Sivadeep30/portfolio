@@ -97,7 +97,7 @@ const projects = [
     id: 4,
     name: "Smart Water Tax Calculation Meter",
     category: "iot",
-    description: "IoT-based smart water tax calculation meter to measure the tax.",
+    description: "IoT-based smart water tax calculation meter to measure the taxes.",
     longDescription: "An IOT based water tax calculation meter for the peoplw living in the apartments.They are currently paying the shared amount of the total apartment.By using this each houses in apartment can pay their tax according to the amount of water they used.",
     techStack: ["Arduino", "Water Flow Sensor", "LCD"],
     cardImage: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
