@@ -27,6 +27,11 @@ import i4 from '../assests/img/imgg4.png';
 import i5 from '../assests/img/imgg5.png';
 import i6 from '../assests/img/imgg6.png';
 import i7 from '../assests/img/imgg7.png';
+import iot from '../assests/img/iot1.jpeg';
+import iott from '../assests/img/iot11.jpeg';
+import iottt from '../assests/img/iot2.jpeg';
+import iotttt from '../assests/img/iot22.jpeg';
+import cropp from '../assests/img/crop.jpg'
 import grrot from '../assests/img/groot.jpg'
 
 const projects = [
@@ -102,10 +107,8 @@ const projects = [
     techStack: ["Arduino", "Water Flow Sensor", "LCD"],
     cardImage: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
     images: [
-      "https://images.unsplash.com/photo-1544975755-a37627c3df82?w=800&q=80",
-      "https://images.unsplash.com/photo-1544975755-a37627c3df82?w=800&q=80"
+     iot,iott
     ],
-    github: "https://github.com/yourusername/smart-home",
     features: [
       "Accuarate Water Usage Measurement",
       "Pay to Usage",
@@ -121,12 +124,10 @@ const projects = [
     description: "Environmental data collection using IOT sensors for plant disease prediction.",
     longDescription: "For collecting environmenntal data using soil moisture sensor ,humidity sensor ,temperature sensor and it is used to predict the diseases that may occur due to the conditions available there.",
     techStack: ["Raspberry PI", "Arduino", "Soil Moisture Sensor,NodeMCU"],
-    cardImage: "https://images.unsplash.com/photo-1558002038-1055907df827?w=800&q=80",
+    cardImage: cropp,
     images: [
-      "https://images.unsplash.com/photo-1544975755-a37627c3df82?w=800&q=80",
-      "https://images.unsplash.com/photo-1544975755-a37627c3df82?w=800&q=80"
+      iottt,iotttt
     ],
-    github: "https://github.com/yourusername/smart-home",
     features: [
       "Environmental Data Collection",
       "Earlier Disease Prediction",
