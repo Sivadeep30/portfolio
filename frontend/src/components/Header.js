@@ -50,7 +50,7 @@ const Header = () => {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/sivadeep-n/"><img src={navIcon1} alt="" /></a>
                 <a href="https://github.com/Sivadeep30"><img src={navIcon2} alt="" /></a>
-                <a href="#"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.instagram.com/sivadeep_n"><img src={navIcon3} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

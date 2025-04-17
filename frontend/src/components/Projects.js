@@ -20,7 +20,7 @@ import bb from '../assests/img/cricket1.png';
 import bc from '../assests/img/cricket2.png';
 import bcd from '../assests/img/cricket3.png';
 import bcde from '../assests/img/cricket4.png';
-import i1 from '../assests/img/imgg.png';
+import i1 from '../assests/img/im.png';
 import i2 from '../assests/img/im.png';
 import i3 from '../assests/img/imgg3.png';
 import i4 from '../assests/img/imgg4.png';
