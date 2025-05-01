@@ -6,13 +6,13 @@ import headerImg from "../assests/img/header-img.svg";
 const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["       Software Engineer"];
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
 
-  // Memoize the tick function to avoid unnecessary recreations
+  // Use useCallback and move the toRotate array inside the callback
   const tick = useCallback(() => {
+    const toRotate = ["       Software Engineer"]; // Moved inside useCallback
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting
@@ -32,7 +32,7 @@ const Banner = () => {
       setLoopNum(loopNum + 1);
       setDelta(500);
     }
-  }, [loopNum, isDeleting, text]); // Memoizing tick function with dependencies
+  }, [loopNum, isDeleting, text, period]); // Dependencies are loopNum, isDeleting, text, and period
 
   useEffect(() => {
     let ticker = setInterval(() => {
