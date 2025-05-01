@@ -16,6 +16,7 @@ const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -29,7 +30,7 @@ const Contact = () => {
     setButtonText("Sending...");
 
     try {
-      const response = await axios.post("http://localhost:5000/contact", formDetails, {
+      const response = await axios.post(`${apiUrl}`, formDetails, {
         headers: {
           "Content-Type": "application/json"
         }
