@@ -58,6 +58,7 @@ const Banner = () => {
   Resume <ArrowRightCircle size={25} />
 </button>
 
+
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="header Img" />
