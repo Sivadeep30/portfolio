@@ -16,7 +16,7 @@ const Contact = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({});
-  const apiUrl = process.env.REACT_APP_API_URL;
+  const apiUrl = "https://portfolio-1-tkkm.onrender.com/";
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
