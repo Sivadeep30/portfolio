@@ -54,7 +54,7 @@ const Banner = () => {
               {`Hi I'm Sivadeep`} <span className="wrap">{text}</span>
             </h1>
             <p></p>
-            <button onClick={() => window.open("/22CSR198_Sivadeep N.pdf", "_blank")}>
+            <button onClick={() => window.open("/resume.pdf", "_blank")}>
   Resume <ArrowRightCircle size={25} />
 </button>
 
